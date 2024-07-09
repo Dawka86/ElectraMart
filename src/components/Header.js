@@ -9,19 +9,19 @@ export default function Header() {
             href="/"
             className="d-inline-flex link-body-emphasis text-decoration-none"
           >
-            <span className="fs-4">
+            <span className="fs-4 tittle_font">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="30"
-                height="30"
+                width="35"
+                height="35"
                 fill="currentColor"
                 class="bi bi-explicit"
-                viewBox="0 0 16 19"
+                viewBox="0 0 12 24"
               >
                 <path d="M6.826 10.88H10.5V12h-5V4.002h5v1.12H6.826V7.4h3.457v1.073H6.826z" />
                 <path d="M2.5 0A2.5 2.5 0 0 0 0 2.5v11A2.5 2.5 0 0 0 2.5 16h11a2.5 2.5 0 0 0 2.5-2.5v-11A2.5 2.5 0 0 0 13.5 0zM1 2.5A1.5 1.5 0 0 1 2.5 1h11A1.5 1.5 0 0 1 15 2.5v11a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 13.5z" />
               </svg>
-              LectraMart
+              <span className="tittle_font">LectraMart</span>
             </span>
           </a>
         </div>

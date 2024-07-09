@@ -14,3 +14,14 @@
 .nav-link {
   color: black;
 }
+.tittle_font {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  color: white;
+  font-size: xx-large;
+}
+.background_photo {
+  align-items: center;
+  background-size: cover;
+  background-image: url(./assets/images/headphone.jpg);
+}
