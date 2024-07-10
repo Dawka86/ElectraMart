@@ -1,19 +1,79 @@
 import React from "react";
+import headphone from "../assets/images/headphone.jpg";
+import watch from "../assets/images/watch.jpg";
+import computer from "../assets/images/computer.jpg";
 
 export default function Jumbotron() {
   return (
-    <div class="my-5">
-      <div class="p-5 text-center bg-body-tertiary">
-        <div class="container py-5">
-          <h1 class="text-body-emphasis">Full-width jumbotron</h1>
-          <p class="col-lg-8 mx-auto lead">
-            This takes the basic jumbotron above and makes its background
-            edge-to-edge with a <code>.container</code> inside to align content.
-            Similar to above, it's been recreated with built-in grid and utility
-            classes.
-          </p>
+    <div class="container py-4">
+      <header class="pb-3 mb-4 border-bottom">
+        <a
+          href="/"
+          class="d-flex align-items-center text-body-emphasis text-decoration-none"
+        >
+          LectraMart
+        </a>
+      </header>
+      <div class="p-5 mb-4 bg-body-tertiary rounded-3">
+        <div className="row">
+          <div className="col">
+            <div class="container-fluid py-5">
+              <h1 class="display-5 fw-bold">Custom jumbotron</h1>
+              <p class="col-md-8 fs-4">
+                Using a series of utilities, you can create this jumbotron, just
+                like the one in previous versions of Bootstrap. Check out the
+                examples below for how you can remix and restyle it to your
+                liking.
+              </p>
+              <button class="btn btn-primary btn-lg" type="button">
+                Example button
+              </button>
+            </div>
+          </div>
+          <div className="col">
+            <div class="card">
+              <img src={watch} class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
+      <div class="row align-items-md-stretch mb-5">
+        <div class="col-md-6">
+          <div class="h-100 p-5 text-bg-dark rounded-3">
+            <h2>Change the background</h2>
+            <p>
+              Swap the background-color utility and add a `.text-*` color
+              utility to mix up the jumbotron look. Then, mix and match with
+              additional component themes and more.
+            </p>
+            <button class="btn btn-outline-light" type="button">
+              Example button
+            </button>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+            <h2>Add borders</h2>
+            <p>
+              Or, keep it light and add a border for some added definition to
+              the boundaries of your content. Be sure to look under the hood at
+              the source HTML here as we've adjusted the alignment and sizing of
+              both column's content for equal-height.
+            </p>
+            <button class="btn btn-outline-secondary" type="button">
+              Example button
+            </button>
+          </div>
+        </div>
+      </div>
+      <hr></hr>
     </div>
   );
 }

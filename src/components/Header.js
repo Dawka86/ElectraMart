@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Header() {
   return (
-    <div className="container-fluid header_container">
+    <div className="container-fluid common_container">
       <header className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
         <div className="col-md-3 mb-2 mb-md-0">
           <a
