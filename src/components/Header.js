@@ -1,9 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import Sign from "./Sign";
 
 export default function Header() {
   return (
     <div className="container-fluid common_container">
-      <header className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+      <header className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
         <div className="col-md-3 mb-2 mb-md-0">
           <a
             href="/"
@@ -28,13 +30,13 @@ export default function Header() {
 
         <ul className="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
           <li>
-            <a href="#" className="nav-link px-2 ">
+            <Link to="/" className="nav-link px-2 ">
               Home
-            </a>
+            </Link>
           </li>
           <li>
             <a href="#" className="nav-link px-2">
-              Features
+              Products
             </a>
           </li>
           <li>
@@ -58,9 +60,9 @@ export default function Header() {
           <button type="button" className="btn btn-outline me-2">
             Login
           </button>
-          <button type="button" className="btn btn-dark">
+          <Link to="/Sign" className="btn btn-dark">
             Sign-up
-          </button>
+          </Link>
         </div>
       </header>
     </div>
