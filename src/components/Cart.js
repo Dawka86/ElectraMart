@@ -18,7 +18,7 @@ export default function Cart() {
           img={watch}
           name="watch"
           price="140.50 £"
-          description="Samsung Galaxy Watch7, Smart Watch"
+          description="Samsung Galaxy Watch7"
         />
         <Products
           img={computer}
