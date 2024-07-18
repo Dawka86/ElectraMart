@@ -10,16 +10,28 @@
     #c850c0 46%,
     #ffcc70 100%
   );
+  min-height: 20vh;
 }
 .nav-link {
+  color: rgb(255, 255, 255);
+}
+.nav-link:hover {
   color: black;
 }
+
 .tittle_font {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
   color: white;
   font-size: xx-large;
 }
+.tittle_font_footer {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  color: rgb(0, 0, 0);
+  font-size: large;
+}
+
 .background_photo {
   align-items: center;
   background-size: cover;
@@ -29,4 +41,48 @@
   align-items: center;
   justify-content: center;
   height: 10vh;
+}
+.card-title {
+  background-color: #f2762e;
+  font-weight: 600;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.full-height {
+  height: 80vh;
+}
+.center-content {
+  justify-content: center;
+  align-items: center;
+}
+.form-control {
+  border: 1px slategrey solid;
+  border-radius: 10px;
+}
+.sign_up_wrapper {
+  border: 1px solid gray;
+  border-radius: 10px;
+  background-color: ghostwhite;
+  padding: 25px;
+}
+.sign_terms {
+  font-size: smaller;
+}
+.button_add_cart {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+.card-header {
+  font-weight: 700;
+  font-style: italic;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+container_cart {
+  position: relative;
+}
+.cart {
+  position: absolute;
+  border-radius: 8px;
+  right: 6px;
+  color: rgb(0, 0, 0);
+  margin-top: 8px;
 }
