@@ -13,6 +13,7 @@ import Sign from "./components/Sign";
 import IconGrid from "./components/IconGrid";
 import Cart from "./components/Cart";
 import CartButton from "./components/CartButton";
+import IconGridProm from "./components/IconGridProm";
 
 export default function App() {
   return (
@@ -25,7 +26,9 @@ export default function App() {
           <Route path="/sign" element={<Sign />} />
         </Routes>
         <CartWrapper />
+        <IconGridProm />
         <IconGritWrapper />
+
         <Footer />
       </div>
     </Router>
