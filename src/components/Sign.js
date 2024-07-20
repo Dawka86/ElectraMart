@@ -4,9 +4,9 @@ export default function Sign() {
   return (
     <div class="container full-height center-content mt-5">
       <div class="row justify-content-center">
-        <div class="col-12 col-md-6 col-lg-4">
+        <div class="col-12 col-md-6 col-lg-4 sign_up_wrapper">
           <form>
-            <h1 class="h4 mb-3">Please sign in</h1>
+            <h1 class="h4 mb-3">Please sign up</h1>
             <div class="form-floating mb-3">
               <input
                 type="email"
@@ -38,8 +38,12 @@ export default function Sign() {
               </label>
             </div>
             <button class="btn btn-primary w-100 py-2" type="submit">
-              Sign in
+              Sign up
             </button>
+            <hr></hr>
+            <p className="sign_terms">
+              By clicking Sign up, you agree to the terms of use.
+            </p>
           </form>
         </div>
       </div>
