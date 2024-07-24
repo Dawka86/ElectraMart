@@ -86,3 +86,50 @@ container_cart {
   color: rgb(0, 0, 0);
   margin-top: 8px;
 }
+.discount_text {
+  color: red;
+  font-size: larger;
+  font-weight: 700;
+  border: 1px solid red;
+  border-radius: 10px;
+  padding: 2px;
+}
+.card-img-top {
+  min-height: 70%;
+}
+#dropdown-basic {
+  color: white;
+  margin-top: 1px;
+}
+#dropdown-basic:hover {
+  color: black;
+}
+.jubotron_background_summer {
+  background-image: url(./assets/images/summer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.jubotron_background_sale {
+  background-image: url(./assets/images/sale.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sale_text {
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
+  font-weight: 700;
+  font-size: xxx-large;
+  font-style: italic;
+  box-shadow: 5px 5px 5px 5px;
+  background-color: rgb(255, 255, 255);
+}
+.arrow_sale {
+  background-color: white;
+  border-radius: 5px;
+  margin-top: 3px;
+  box-shadow: 3px 3px 3px 3px;
+}
+.arrow_sale:hover {
+  background-color: black;
+  color: white;
+  box-shadow: 3px 3px 5px 0px rgba(255, 255, 255, 0.3);
+}
