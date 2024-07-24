@@ -11,43 +11,44 @@ export default function IconGridProm() {
       <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
         <div className="col d-flex align-items-start">
           <div class="card" style={{ width: "18rem", height: "18rem" }}>
-            <img src={ps5} class="card-img-top" alt="..." />
+            <img src={ps5} class="card-img-top" alt="ps5" />
             <div class="card-body">
               <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                Ps5 and two additional games for{" "}
+                <span className="discount_text">free</span>!!!
               </p>
             </div>
           </div>
         </div>
         <div className="col d-flex align-items-start">
           <div class="card" style={{ width: "18rem", height: "18rem" }}>
-            <img src={xbox} class="card-img-top" alt="..." />
+            <img src={xbox} class="card-img-top" alt="xbox" />
             <div class="card-body">
               <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                Xbox and two additional games for{" "}
+                <span className="discount_text">free</span> !!!
               </p>
             </div>
           </div>
         </div>
         <div className="col d-flex align-items-start">
           <div class="card" style={{ width: "18rem", height: "18rem" }}>
-            <img src={nikon} class="card-img-top" alt="..." />
+            <img src={nikon} class="card-img-top" alt="nikon" />
             <div class="card-body">
               <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                Only this month <span className="discount_text">20%</span> off
+                on Nikon cameras!!!
               </p>
             </div>
           </div>
         </div>
         <div className="col d-flex align-items-start">
           <div class="card" style={{ width: "18rem", height: "18rem" }}>
-            <img src={keyboard} class="card-img-top" alt="..." />
+            <img src={keyboard} class="card-img-top" alt="keyboard" />
             <div class="card-body">
               <p class="card-text">
-                Some quick example text to build on the card title and make up
+                <span className="discount_text">10%</span> off selected
+                keyboards!!!
               </p>
             </div>
           </div>
