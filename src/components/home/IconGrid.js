@@ -3,7 +3,9 @@ import React from "react";
 export default function IconGrid() {
   return (
     <div className="container px-4 py-5" id="icon-grid">
-      <h2 className="pb-2 border-bottom ">What makes us different?</h2>
+      <h3 className="pb-2 border-bottom text-start">
+        What makes us different?
+      </h3>
 
       <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
         <div className="col d-flex align-items-start">

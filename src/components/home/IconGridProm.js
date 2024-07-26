@@ -1,7 +1,7 @@
-import ps5 from "../assets/images/ps5.jpg";
-import xbox from "../assets/images/xbox.jpg";
-import nikon from "../assets/images/nikon.jpg";
-import keyboard from "../assets/images/keyboard.jpg";
+import ps5 from "../../assets/images/ps5.jpg";
+import xbox from "../../assets/images/xbox.jpg";
+import nikon from "../../assets/images/nikon.jpg";
+import keyboard from "../../assets/images/keyboard.jpg";
 
 export default function IconGridProm() {
   return (

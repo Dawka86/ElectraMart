@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Sign from "./Sign";
+import ProductList from "./ProductListNav";
 
 export default function Header() {
   return (
-    <div className="container-fluid common_container">
+    <div className="container-fluid common_container border-bottom border-dark">
       <header className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
         <div className="col-md-3 mb-2 mb-md-0">
           <a
@@ -34,11 +34,7 @@ export default function Header() {
               Home
             </Link>
           </li>
-          <li>
-            <a href="#" className="nav-link px-2">
-              Products
-            </a>
-          </li>
+          <ProductList />
           <li>
             <a href="#" className="nav-link px-2">
               Pricing
@@ -57,7 +53,10 @@ export default function Header() {
         </ul>
 
         <div class="col-md-3 text-end">
-          <button type="button" className="btn btn-outline me-2">
+          <button
+            type="button"
+            className="btn btn-outline border border-black me-2"
+          >
             Login
           </button>
           <Link to="/Sign" className="btn btn-dark">

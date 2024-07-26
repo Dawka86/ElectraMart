@@ -1,7 +1,7 @@
 import Products from "./Products";
-import headphones from "../assets/images/headphone.jpg";
-import watch from "../assets/images/watch.jpg";
-import computer from "../assets/images/computer.jpg";
+import headphones from "../../assets/images/headphone.jpg";
+import watch from "../../assets/images/watch.jpg";
+import computer from "../../assets/images/computer.jpg";
 
 export default function Cart() {
   return (
