@@ -133,3 +133,17 @@ container_cart {
   color: white;
   box-shadow: 3px 3px 5px 0px rgba(255, 255, 255, 0.3);
 }
+/* Styling for the cardProducts component*/
+.cart_tittle {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  padding: 1px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.buy_button {
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  border: red solid 1px;
+}
