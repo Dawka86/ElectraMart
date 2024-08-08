@@ -40,25 +40,28 @@ export default function OverlayProducts({ items }) {
             {...props}
             style={{
               position: "absolute",
-              backgroundColor: "rgba(255, 100, 100, 0.85)",
+              backgroundColor: "rgba(255, 100, 100, 0.95)",
               padding: "2px 10px",
               color: "white",
-              borderRadius: 3,
+              borderRadius: 5,
               ...props.style,
             }}
           >
             {items.length > 0 ? (
-              <ul>
+              <ol>
                 {items.map((item, index) => {
                   return (
                     <li key={index}>
-                      <p>
-                        {index + 1} {item.name}-{item.price}£
-                      </p>
+                      <div className="ol_container">
+                        <p className="item-details">
+                          {item.name} - {item.price}£
+                        </p>
+                        <button className="remove-button">X</button>
+                      </div>
                     </li>
                   );
                 })}
-              </ul>
+              </ol>
             ) : (
               <p>Your shopping cart is empty!</p>
             )}
