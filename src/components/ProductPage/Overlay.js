@@ -2,9 +2,13 @@ import { useState, useRef } from "react";
 import Button from "react-bootstrap/Button";
 import Overlay from "react-bootstrap/Overlay";
 
-export default function OverlayProducts({ items }) {
+export default function OverlayProducts({ items, totalPrice }) {
   const [show, setShow] = useState(false);
   const target = useRef(null);
+
+  function handleClick() {
+    console.log("kilck");
+  }
 
   return (
     <div className="overlay_container">
@@ -56,7 +60,9 @@ export default function OverlayProducts({ items }) {
                         <p className="item-details">
                           {item.name} - {item.price}£
                         </p>
-                        <button className="remove-button">X</button>
+                        <button onClick={handleClick} className="remove-button">
+                          X
+                        </button>
                       </div>
                     </li>
                   );
@@ -65,6 +71,7 @@ export default function OverlayProducts({ items }) {
             ) : (
               <p>Your shopping cart is empty!</p>
             )}
+            <h4>£{totalPrice}</h4>
           </div>
         )}
       </Overlay>
