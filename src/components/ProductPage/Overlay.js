@@ -2,13 +2,9 @@ import { useState, useRef } from "react";
 import Button from "react-bootstrap/Button";
 import Overlay from "react-bootstrap/Overlay";
 
-export default function OverlayProducts({ items, totalPrice }) {
+export default function OverlayProducts({ items, totalPrice, removeFromCart }) {
   const [show, setShow] = useState(false);
   const target = useRef(null);
-
-  function handleClick() {
-    console.log("kilck");
-  }
 
   return (
     <div className="overlay_container">
@@ -52,26 +48,37 @@ export default function OverlayProducts({ items, totalPrice }) {
             }}
           >
             {items.length > 0 ? (
-              <ol>
-                {items.map((item, index) => {
-                  return (
-                    <li key={index}>
-                      <div className="ol_container">
-                        <p className="item-details">
-                          {item.name} - {item.price}£
-                        </p>
-                        <button onClick={handleClick} className="remove-button">
-                          X
-                        </button>
-                      </div>
-                    </li>
-                  );
-                })}
-              </ol>
+              <div>
+                <div>
+                  {" "}
+                  <p className="total_class">Basket list</p>
+                  <hr></hr>
+                </div>
+                <ol>
+                  {items.map((item, index) => {
+                    return (
+                      <li key={index}>
+                        <div className="ol_container">
+                          <p className="item-details">
+                            {item.name} - {item.price}£
+                          </p>
+                          <button
+                            onClick={() => removeFromCart(index)}
+                            className="remove-button"
+                          >
+                            X
+                          </button>{" "}
+                        </div>{" "}
+                      </li>
+                    );
+                  })}
+                </ol>{" "}
+                <hr></hr>
+                <h4 className="total_price">£{totalPrice}</h4>
+              </div>
             ) : (
               <p>Your shopping cart is empty!</p>
             )}
-            <h4>£{totalPrice}</h4>
           </div>
         )}
       </Overlay>
