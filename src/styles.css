@@ -133,17 +133,136 @@ container_cart {
   color: white;
   box-shadow: 3px 3px 5px 0px rgba(255, 255, 255, 0.3);
 }
+
 /* Styling for the cardProducts component*/
+
 .cart_tittle {
   background-color: black;
   color: white;
   border-radius: 5px;
   padding: 1px;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.price-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .buy_button {
-  border-radius: 5px;
+  border-radius: 7px;
   background-color: white;
   color: black;
-  border: red solid 1px;
+  border: red solid 2px;
+  margin-left: 2px;
+  padding: 5px 15px;
+  font-weight: 700;
+}
+.buy_button:hover {
+  background-color: red;
+  color: rgb(255, 255, 255);
+}
+.cart-price {
+  margin: 0em;
+  background-color: black;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 7px;
+}
+.overlay_container {
+  background-color: black;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+  z-index: 333;
+}
+.button_basket {
+  float: left;
+}
+.items_lenght {
+  background-color: azure;
+  color: black;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 2px 2px;
+}
+.remove-button {
+  background: white;
+  color: black;
+  border: 1px solid;
+  border-radius: 9px;
+  font-size: xx-small;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.ol_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item-details {
+  margin: 0; /*  */
+}
+
+.remove-button {
+  background-color: rgb(254, 254, 254);
+  color: rgb(0, 0, 0);
+  border: solid 1px;
+  padding: 5px 10px;
+  font-size: x-small;
+  border-radius: 5px;
+  margin-left: 6px;
+  box-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+.remove-button:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border: black 1px solid;
+  box-shadow: 1px 1px 1px 1px rgb(255, 255, 255);
+}
+.total_class {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: larger;
+  color: black;
+  font-weight: 400;
+  padding-top: 5px;
+}
+.total_price {
+  color: black;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-weight: 400;
+}
+hr {
+  color: rgb(0, 0, 0);
+}
+.bi-hand-thumbs-up {
+  color: #137413;
+  margin-right: auto;
+}
+.message_container {
+  align-items: center;
+  justify-content: right;
+  display: flex;
+}
+.message_body {
+  position: fixed;
+  top: 10%;
+  left: 85%;
+  z-index: 999;
+}
+.toast {
+  background-color: rgb(53, 174, 53);
+  color: white;
+  position: sticky;
+  top: 0;
 }
