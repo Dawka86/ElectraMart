@@ -13,8 +13,10 @@ import CartMessage from "./CartMessage";
 export default function ProductsPage() {
   const [items, setItems] = useState([]); // Tablica produktow
   const [show, setShow] = useState(false);
+  const [message, setMessage] = useState({message:"", title:"", typ:""});
 
-  function showMessage() {
+  function showMessage(message, title, typ) {
+    setMessage({message, title, typ});
     setShow(true);
   }
 
@@ -26,13 +28,14 @@ export default function ProductsPage() {
     setItems((prevItems) => {
       return [...prevItems, item];
     });
-    showMessage();
+    showMessage("Woow. Product has been added to the cart", "Success", `add`);
   }
 
   function deleteProduct(indexToRemove) {
     setItems((prevItems) =>
       prevItems.filter((_, index) => index !== indexToRemove),
     );
+    showMessage(`The product has been removed from the cart`, "Delete", `delete`);
   }
 
   const totalPrice = items.reduce((sum, items) => sum + items.price, 0);
@@ -40,7 +43,7 @@ export default function ProductsPage() {
   return (
     <Accordion defaultActiveKey="0" alwaysOpen>
       <Accordion.Item eventKey="0">
-        <CartMessage show={show} hiddenMessage={hiddenMessage} />
+        <CartMessage message={message.message} title={message.title} show={show} typ={message.typ}  hiddenMessage={hiddenMessage} />
         <div>
           <OverlayProducts
             items={items}
