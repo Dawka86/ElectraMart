@@ -11,10 +11,12 @@ import OverlayProducts from "./Overlay";
 import CartMessage from "./CartMessage";
 
 export default function ProductsPage() {
-  const [items, setItems] = useState([]); // Tablica produktow
-  const [show, setShow] = useState(false);
-  const [message, setMessage] = useState({message:"", title:"", typ:""});
+  const [items, setItems] = useState([]); // Products array 
+  const [show, setShow] = useState(false); 
+  const [message, setMessage] = useState({message:"", title:"", typ:""});// the state in message stores an object with three properties: message, title and typ
 
+
+  // function responsible for displaying messages
   function showMessage(message, title, typ) {
     setMessage({message, title, typ});
     setShow(true);
@@ -24,12 +26,20 @@ export default function ProductsPage() {
     setShow(false);
   }
 
+
+  // function responsible for add items to the cart  
+  // and send message in  second part
+
   function addItem(item) {
     setItems((prevItems) => {
       return [...prevItems, item];
     });
     showMessage("Woow. Product has been added to the cart", "Success", `add`);
   }
+
+
+  //function responsible for remove items from the cart
+  // and second part sending message to confirm
 
   function deleteProduct(indexToRemove) {
     setItems((prevItems) =>
@@ -38,6 +48,8 @@ export default function ProductsPage() {
     showMessage(`The product has been removed from the cart`, "Delete", `delete`);
   }
 
+
+  // This code calculates the total price of all items in the items array.
   const totalPrice = items.reduce((sum, items) => sum + items.price, 0);
 
   return (
