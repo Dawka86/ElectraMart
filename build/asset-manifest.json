@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.84cdaf42.css",
+    "main.js": "/static/js/main.d62d4ae0.js",
+    "static/media/tv2.jpg": "/static/media/tv2.d35c89806af561ef0d85.jpg",
+    "static/media/sale.jpg": "/static/media/sale.3e7d8037ca0c818047ba.jpg",
+    "static/media/nikon.jpg": "/static/media/nikon.b9ca1f8a099617cb9490.jpg",
+    "static/media/nintendo.jpg": "/static/media/nintendo.45cbd3cdd01feb09bfae.jpg",
+    "static/media/summer.jpg": "/static/media/summer.12258a7ec07657f05b80.jpg",
+    "static/media/xbox.jpg": "/static/media/xbox.510b1329be722c468a98.jpg",
+    "static/media/xboxX.jpg": "/static/media/xboxX.510b1329be722c468a98.jpg",
+    "static/media/ps5.jpg": "/static/media/ps5.410ae94a27c22359b8ea.jpg",
+    "static/media/controler.jpg": "/static/media/controler.d9c04a409fbaff368668.jpg",
+    "static/media/tv3.jpg": "/static/media/tv3.2826e268a5890f177de0.jpg",
+    "static/media/PlayS5.jpg": "/static/media/PlayS5.b182d084c68fc92a0e5d.jpg",
+    "static/media/keyboard.jpg": "/static/media/keyboard.82927064106c3abe2097.jpg",
+    "static/media/tv1.jpg": "/static/media/tv1.64b6a2263789fe9e7569.jpg",
+    "static/media/computer.jpg": "/static/media/computer.3e07f8f7bce22ffb77f3.jpg",
+    "static/media/headphone.jpg": "/static/media/headphone.d648d799ceb91d93a3cd.jpg",
+    "static/media/watch.jpg": "/static/media/watch.3b41591cd9c5927c8b32.jpg",
+    "index.html": "/index.html",
+    "main.84cdaf42.css.map": "/static/css/main.84cdaf42.css.map",
+    "main.d62d4ae0.js.map": "/static/js/main.d62d4ae0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.84cdaf42.css",
+    "static/js/main.d62d4ae0.js"
+  ]
+}
