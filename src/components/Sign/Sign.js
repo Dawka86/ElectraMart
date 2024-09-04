@@ -9,7 +9,6 @@ export default function Sign() {
   function updateEmail(event) {
     const emailAdded = event.target.value;
     setEmail(emailAdded);
-    console.log(emailAdded); // Log the current value directly from the event
   }
 
   function updateName(event) {
@@ -27,11 +26,13 @@ export default function Sign() {
     setConfirmPassword(confirm);
   }
 
+ 
+
   return (
     <div className="container center-content mt-3 mb-3">
       <div className="row justify-content-center">
         <div className="col-12 col-md-6 col-lg-4 sign_up_wrapper">
-          <form>
+          <form action="/sign" method="POST">
             <h1 className="h4 mb-3">Please sign up {name}</h1>
             <div className="form-floating mb-3">
               <input
@@ -39,6 +40,7 @@ export default function Sign() {
                 className="form-control"
                 id="nameInput"
                 placeholder="name"
+                name="name"
                 value={name}
                 onChange={updateName}
               />
@@ -47,6 +49,7 @@ export default function Sign() {
             <div className="form-floating mb-3">
               <input
                 type="email"
+                name="email"
                 className="form-control"
                 id="emailInput"
                 placeholder="name@example.com"
@@ -58,6 +61,7 @@ export default function Sign() {
             <div className="form-floating mb-3">
               <input
                 type="password"
+                name="password"
                 className="form-control"
                 id="passwordInput"
                 placeholder="Password"
@@ -71,6 +75,7 @@ export default function Sign() {
                 type="password"
                 className="form-control"
                 id="confirmPasswordInput"
+                name="confirmPassword"
                 placeholder="Confirm Password"
                 value={confirmPassword}
                 onChange={updateConfirmPassword}
@@ -82,6 +87,7 @@ export default function Sign() {
               <input
                 className="form-check-input"
                 type="checkbox"
+                name="checkbox"
                 value="remember-me"
                 id="flexCheckDefault"
               />

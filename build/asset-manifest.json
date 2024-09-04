@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.84cdaf42.css",
-    "main.js": "/static/js/main.d62d4ae0.js",
+    "main.js": "/static/js/main.9900fe14.js",
     "static/media/tv2.jpg": "/static/media/tv2.d35c89806af561ef0d85.jpg",
     "static/media/sale.jpg": "/static/media/sale.3e7d8037ca0c818047ba.jpg",
     "static/media/nikon.jpg": "/static/media/nikon.b9ca1f8a099617cb9490.jpg",
@@ -20,10 +20,10 @@
     "static/media/watch.jpg": "/static/media/watch.3b41591cd9c5927c8b32.jpg",
     "index.html": "/index.html",
     "main.84cdaf42.css.map": "/static/css/main.84cdaf42.css.map",
-    "main.d62d4ae0.js.map": "/static/js/main.d62d4ae0.js.map"
+    "main.9900fe14.js.map": "/static/js/main.9900fe14.js.map"
   },
   "entrypoints": [
     "static/css/main.84cdaf42.css",
-    "static/js/main.d62d4ae0.js"
+    "static/js/main.9900fe14.js"
   ]
 }
